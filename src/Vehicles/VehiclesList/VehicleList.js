@@ -1,6 +1,6 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import './VehicleList.css'
-import {Table, Button, Spinner, Badge} from 'reactstrap';
+import {Table, Button, Badge} from 'reactstrap';
 import CreateVehicle from '../CreateVehicle/CreateVehicle';
 import axios from 'axios';
 import UpdateVehicle from '../UpdateVehicle/UpdateVehicle';

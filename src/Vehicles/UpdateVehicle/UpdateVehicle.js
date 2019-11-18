@@ -7,13 +7,7 @@ export default class UpdateVehicle extends Component {
         super(props);
       
         this.state = {
-          modal: true,
-        //   tagId: '',
-        //   owner: '',
-        //   plate: '',
-        //   insuranceExp: '',
-        //   roadWorthiness: '',
-        //   vehicleLicenseExp: ''
+            modal: true,
             id: this.props.currentRow._id,
             tagId: this.props.currentRow.tag_id,
             owner: this.props.currentRow.owner,
