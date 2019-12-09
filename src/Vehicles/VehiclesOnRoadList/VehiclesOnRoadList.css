@@ -1,0 +1,27 @@
+.create-btn {
+    float: right;
+    margin: 20px 50px;;
+}
+
+.badge {
+    padding: 5px;
+    width: 60px;
+}
+
+.vehicles-list {
+    padding: 10px;
+}
+
+.table-header {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+tr {
+    cursor: pointer;
+}
+
+.spinner{ 
+    margin: 20px auto;
+}

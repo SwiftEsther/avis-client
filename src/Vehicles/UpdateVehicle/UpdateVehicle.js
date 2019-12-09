@@ -44,6 +44,7 @@ export default class UpdateVehicle extends Component {
             .then((response) => {
                 this.toggle();
                 alert(response.data.message);
+                axios.get(`http://localhost:4000/api/vehicle/`)
             })
             .catch((error) => {
                 console.log(error);

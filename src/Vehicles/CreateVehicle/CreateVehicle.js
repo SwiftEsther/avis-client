@@ -43,6 +43,7 @@ export default class CreateVehicle extends Component {
             .then((response) => {
                 this.toggle();
                 alert(response.data.message);
+                axios.get('http://localhost:4000/api/vehicles');
             })
             .catch((error) => {
                 console.log(error);

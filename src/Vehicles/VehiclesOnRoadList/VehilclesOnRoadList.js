@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import './VehicleList.css'
+import './VehiclesOnRoadList.css'
 import {Table, Button, Badge} from 'reactstrap';
 import CreateVehicle from '../CreateVehicle/CreateVehicle';
 import axios from 'axios';
 import UpdateVehicle from '../UpdateVehicle/UpdateVehicle';
 
-export default class VehicleList extends Component {
+export default class VehiclesOnRoadList extends Component {
     constructor(props) {
         super(props);
       
@@ -18,7 +18,7 @@ export default class VehicleList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/api/vehicles')
+        axios.get('http://localhost:4000/api/road-vehicles')
             .then((response) => {
                 this.setState({vehicles: response.data.vehicles});
             })
@@ -38,10 +38,8 @@ export default class VehicleList extends Component {
     render() {
         return(
             <div className="vehicles-list">
-                <h2 className="table-header">Vehicles</h2>
-                <div className="create-btn">
-                     <Button color="primary" onClick = {this.openCreateModal}>Create New</Button>
-                </div>
+                {/* <h2 className="table-header">Vehicles</h2> */}
+                <h2 className="table-header">Vehicles on Road</h2>
 
                 <Table striped>
                 <thead>
